@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "Chrome Exkittension",
+  "version": "0.1",
+  "icons": { "16": "icon16.png",
+           "48": "icon48.png",
+          "128": "icon128.png" },
+  "web_accessible_resources": [
+    "kittens/*.jpg"
+  ],
+  "background": {
+    "scripts": ["kitten.js"]
+  },
+  "browser_action": {
+    "default_icon": "tim.png"
+  },
+  "permissions": [
+      "tabs",
+      "storage",
+      "notifications",
+      "http://*/",
+      "https://*/"
+  ]
+}
